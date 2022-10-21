@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop2 - week3 - Coolblue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">logo hier</div>
+    </header>
+    <content>
+        <form action="bestellen.php" method="get">
+            <div class="row">
+              <div class="left">
+                <p>Type Bestelling</p>
+              </div>
+              <div class="right">
+                <p>
+                    <input type="radio" id="html" name="particulier_of_zakelijk" value="HTML">
+                    <label for="html">Particulair</label>
+                    <input type="radio" id="html" name="particulier_of_zakelijk" value="HTML">
+                    <label for="html">Zakelijk</label>
+                     </p>
+              </div>
+              
+            </div>
+            <div class="row">
+                <div class="left">
+                  <p>Aanhef</p>
+                </div>
+                <div class="right">
+                  <p>
+                      <input type="radio" id="html" name="Dhr._of_Mevr." value="HTML">
+                      <label for="html">Dhr.</label>
+                      <input type="radio" id="html" name="Dhr._of_Mevr." value="HTML">
+                      <label for="html">Mevr.</label>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Naam</p>
+                </div>
+                <div class="right">
+                  <p>
+                         <input type="text" name="vnaam" placeholder="Voornaam" />
+                        <input type="text" name="tussenv." placeholder="Tussenv." />
+                        <input type="text" name="anaam." placeholder="Achternaam" />
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Postcode</p>
+                </div>
+                <div class="right">
+                  <p>
+                     <input type="text" name="postcode" placeholder="1234AB" /><br>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Huisnummer</p>
+                </div>
+                <div class="right">
+                  <p>
+                        <input type="text" name="nr." placeholder="Nr." />
+                       <input type="text" name="toev." placeholder="toev."/>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Land</p>
+                </div>
+                <div class="right">
+                  <p>
+                      <input id="country" type="text" name="country" size="10" list="countries" />
+                      <datalist id="countries">
+                        <option value="Belgie">
+                        <option value="Nederland">
+                        <option value="Luxemburg">
+                        <option value="Duitsland">
+                        <option value="Frankrijk">
+                        <option value="Oostenrijk">
+                            
+                      </datalist>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Afleveradres</p>
+                </div>
+                <div class="right">
+                  <p>
+                      <input type="radio" id="html" name="Op bovenstaand adres bezorgen_of_op ander adres bezorgen" value="HTML">
+                      <label for="html">Op bovenstaand adres bezorgen</label>
+                      <input type="radio" id="html" name="Op bovenstaand adres bezorgen_of_op ander adres bezorgen" value="HTML">
+                      <label for="html">op ander adres bezorgen</label>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>E-mailadres</p>
+                </div>
+                <div class="right">
+                  <p>
+                        <input type="text" name="e-mails" /><br>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Telefoonnummer</p>
+                </div>
+                <div class="right">
+                  <p>
+                         <input type="text" name="telnr" /><br>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Geboortedatum</p>
+                </div>
+                <div class="right">
+                  <p>
+                        <input type="text" name="gebd" placeholder="dd-mm-jjjj"/><br>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Verzendwijze factuur</p>
+                </div>
+                <div class="right">
+                  <p>
+                      <input type="radio" id="html" name="Factuur per e-mail_of_Factuur geprint bij bestelling" value="HTML">
+                      <label for="html">Factuur per e-mail</label>
+                      <input type="radio" id="html" name="Factuur per e-mail_of_Factuur geprint bij bestelling" value="HTML">
+                      <label for="html">Factuur geprint bij bestelling</label>
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Nieuwsbrief</p>
+                </div>
+                <div class="right">
+                  <p>
+                      <input type="radio" id="html" name="Ja, ik wil de Coolblue-nieuwsbrief met €5,- cadeaubon voor mijnvolgende bestelling" value="HTML">
+                      <label for="html">Ja, ik wil de Coolblue-nieuwsbrief met €5,- cadeaubon voor mijnvolgende bestelling</label>
+                </div>
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="left">
+                <p>Kleur verpakking</p>
+              </div>
+              <div class="right">
+                <p>
+                    <input id="color" type="color" name="color" size="10" list="colors" />
+                     </p>
+              </div>
+              
+            </div>
+            <div class="row">
+                <div class="left">
+                  <p> Bewaar je gegevens.</p>
+                  <p> voor de volgende keer.</p>
+                </div>
+                <div class="right">
+                  <p>
+                     
+                       </p>
+                </div>
+                
+              </div>
+              <div class="row">
+                <div class="left">
+                  <p>Wachtwoord</p>
+                </div>
+                <div class="right">
+                  <p>
+                         <input type="text" name="ww" /><br>
+                       </p>
+                </div>
+                <div class="row">
+                    <div class="left">
+                      <p>Wachtwoord bevestigen</p>
+                    </div>
+                    <div class="right">
+                      <p>
+                             <input type="text" name="wwbv" /><br>
+                           </p>
+                    </div>
+            
+              
+            
+
+        </form>
+    </content>
+</body>
+</html>
